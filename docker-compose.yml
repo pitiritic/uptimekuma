@@ -1,0 +1,9 @@
+version: "3"
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma
+    volumes:
+      - ./data:/data # Asegúrate de que ./data contenga los archivos copiados
+    ports:
+      - 3001:3001
+    restart: always
